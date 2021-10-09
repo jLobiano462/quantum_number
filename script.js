@@ -100,7 +100,7 @@ const getQuant = (orb, el,ss)=>{
   nP.textContent = oN
   lP.textContent = oL
   if (el > subShellObject[ss]){
-    alert(`the ${ss} subshell is incapabel of storing ${el} electrons`)
+    errorHandle2.textContent =`the ${ss} subshell is incapabel of storing ${el} electrons`
   }else{
     nP.textContent += orb
     lP.textContent += l_indentifier[ss]
@@ -277,5 +277,3 @@ function generateTemplate(nString,lString,elecString){
   ${elecString}
   </sup>`
 }
-
-console.log('hello')
