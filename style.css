@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+
+
+body{
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.7rem;
+  text-align:center;
+  background: linear-gradient(to right,rgba(0,0,0,.75),rgba(0,0,0,.75))fixed,url('background.jpg')fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+
+
+}
+
+
+h1{
+  color:rgb(10, 40, 191);
+  text-shadow: 0 0 3px green, 0 0 5px white;
+}
+
+nav{
+  width: 100%;
+  padding:.35em 0;
+  background: black;
+  border-bottom: 2px solid blue;
+
+}
+
+
+main{
+  width:65%;
+  margin: 0 auto;
+
+  margin-top:1.5em;
+
+  height:60vh;
+
+}
+
+input{
+  border: 2px solid black;
+}
+
+.Config-to-qn, .Qn-to-config{
+  width:75%;
+  padding:.85em;
+  border-radius: 10px;
+  margin: 0 auto;
+  background: rgb(103, 108, 133);
+  height: 100%;
+  font-size: .95rem;
+  border:3px solid black;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+
+.switch{
+  padding: .55em;
+
+  font-family: 'Orbitron';
+  color:white;
+  background: red;
+
+}
+
+
+.icon{
+  font-size: .95rem;
+}
+
+
+
+
+
+.Qn-to-config{
+  display: none;
+}
+
+
+.show{
+  display:flex;
+}
+
+
+.input-contents{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+
+
+}
+
+.input-contents div{
+  width: 45%;
+}
+
+.button{
+
+  width: 100%;
+
+  display: flex;
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+}
+
+
+.calculate{
+  padding: .55em;
+
+  font-family: 'Orbitron';
+  color:white;
+  background: green;
+
+}
+
+.result-div div{
+  display: flex;
+  width:100%;
+  color:darkgreen;
+  justify-content: space-around;
+  font-weight: bolder;
+
+}
+
+.button-2{
+
+
+  width: 100%;
+
+  display: flex;
+  align-items: flex-end;
+
+  justify-content: space-between;
+}
+
+#result {
+  width: 100%;
+}
+
+#error-handler{
+  color:red;
+  font-size: .75rem;
+}
+
+
+
+#button{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#button-2{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+@media (max-width:1100px){
+  body{
+    font-size: 1.3rem;
+
+  }
+
+  .Config-to-qn,.Qn-to-config{
+    font-size: .85rem;
+    width:85%;
+
+  }
+
+  .calculate{
+    font-size: .75rem;
+    padding: .50em;
+
+  }
+
+  .switch{
+    font-size: .75rem;
+    padding:.50em;
+  }
+
+  #error-handler{
+    font-size: .70rem;
+  }
+
+}
+
+@media (max-width:968px){
+
+  body{
+    font-size: 1.3rem;
+
+  }
+
+  .Config-to-qn,.Qn-to-config{
+    font-size: .85rem;
+    width:100%;
+
+  }
+
+  .calculate{
+    font-size: .65rem;
+    padding: .45em
+
+  }
+
+  .switch{
+    font-size: .65rem;
+    padding:.45em;
+  }
+
+  #error-handler{
+    font-size: .60rem;
+  }
+
+
+
+}
+
+
+@media (max-width:810px){
+
+  body{
+    font-size: 1.3rem;
+
+  }
+
+  .Config-to-qn,.Qn-to-config{
+    font-size: .85rem;
+    width:100%;
+    height:80vh;
+
+  }
+
+  .calculate{
+    font-size: .65rem;
+    padding: .45em
+
+  }
+
+  .switch{
+    font-size: .65rem;
+    padding:.45em;
+  }
+
+  #error-handler{
+    font-size: .60rem;
+  }
+
+
+
+}
+
+
+@media (max-width:780px){
+
+  body{
+    font-size: 1.2rem;
+
+
+  }
+
+  .Config-to-qn,.Qn-to-config{
+    font-size: .85rem;
+    width:100%;
+
+
+
+  }
+
+  .input-contents{
+    flex-direction: column;
+    justify-content: space-between;
+
+
+  }
+
+  .input-contents div{
+    width:100%;
+
+  }
+
+  .calculate{
+    font-size: .65rem;
+    padding: .45em
+
+  }
+
+  .switch{
+    font-size: .65rem;
+    padding:.45em;
+  }
+
+  #error-handler{
+    font-size: .60rem;
+  }
+
+  #configuration{
+    font-size: .85rem;
+
+  }
+
+
+
+}
+
+
+@media (max-width:680px){
+
+  body{
+    font-size: 1.1rem;
+
+
+  }
+
+  .Config-to-qn,.Qn-to-config{
+    font-size: .80rem;
+    width:100%;
+
+
+
+  }
+
+  .input-contents{
+    flex-direction: column;
+    justify-content: space-between;
+
+
+  }
+
+  .input-contents div{
+    width:100%;
+
+  }
+
+  .calculate{
+    font-size: .55rem;
+    padding: .35em
+
+  }
+
+  .switch{
+    font-size: .55rem;
+    padding:.35em;
+  }
+
+  #error-handler{
+    font-size: .50rem;
+  }
+
+  #configuration{
+    font-size: .80rem;
+
+  }
+
+
+
+@media (max-width:580px){
+
+    body{
+      font-size: 1rem;
+
+
+    }
+
+    main{
+      width:85%;
+    }
+
+    .Config-to-qn,.Qn-to-config{
+      font-size: .85rem;
+      width:100%;
+
+
+
+    }
+
+    .input-contents{
+      flex-direction: column;
+      justify-content: space-between;
+
+
+    }
+
+    .input-contents div{
+      width:100%;
+
+    }
+
+    .calculate{
+      font-size: .65rem;
+      padding: .45em
+
+    }
+
+    .switch{
+      font-size: .65rem;
+      padding:.45em;
+    }
+
+    #error-handler{
+      font-size: .60rem;
+    }
+
+    #configuration{
+      font-size: .85rem;
+
+    }
+
+
+
+
+
+
+
+
+
+
+@media (max-width:530px){
+
+  body{
+    font-size: 1rem;
+
+
+  }
+  nav{
+
+  }
+  main{
+    width:85%;
+    margin:1em 5%;
+
+  }
+
+  .Config-to-qn,.Qn-to-config{
+    font-size: .85rem;
+    width:100%;
+
+
+
+  }
+
+  .input-contents{
+    flex-direction: column;
+    justify-content: space-between;
+
+
+  }
+
+  .input-contents div{
+    width:100%;
+
+  }
+
+  .calculate{
+    font-size: .55rem;
+    padding: .35em
+
+  }
+
+  .switch{
+    font-size: .55rem;
+    padding:.35em;
+  }
+
+  #error-handler{
+    font-size: .45rem;
+  }
+
+  #configuration{
+    font-size: .75rem;
+
+  }
+
+
+
+}
+
+@media (max-width:500px){
+
+  body{
+    font-size: .75rem;
+
+
+  }
+
+  main{
+    width:85%;
+    margin:1em 1em;
+
+  }
+
+  .Config-to-qn,.Qn-to-config{
+    font-size: .85rem;
+    width:100%;
+    margin:0;
+
+
+
+  }
+
+  .input-contents{
+    flex-direction: column;
+    justify-content: space-between;
+
+
+  }
+
+  .input-contents div{
+    width:100%;
+
+  }
+
+  .calculate{
+    font-size: .55rem;
+    padding: .35em
+
+  }
+
+  .switch{
+    font-size: .55rem;
+    padding:.35em;
+  }
+
+  #error-handler{
+    font-size: .45rem;
+  }
+
+  #configuration{
+    font-size: .75rem;
+
+  }
+
+
+
+}
+
+
+@media (max-width:495px){
+
+  body{
+    font-size: .75rem;
+
+
+  }
+
+
+  main{
+    width:85%;
+    margin:1em 1em;
+
+
+  }
+
+  .Config-to-qn,.Qn-to-config{
+    font-size: .75rem;
+    width:100%;
+    margin:0;
+
+
+
+  }
+
+  .input-contents{
+    flex-direction: column;
+    justify-content: space-between;
+
+
+  }
+
+  .input-contents div{
+    width:100%;
+
+  }
+
+  .calculate{
+    font-size: .50rem;
+    padding: .35em
+
+  }
+
+  .switch{
+    font-size: .50rem;
+    padding:.35em;
+
+  }
+
+  #error-handler{
+    font-size: .35rem;
+  }
+
+  #configuration{
+    font-size: .65rem;
+
+  }
+
+
+
+}
+
+@media (max-width:320px){
+  #error-handler{
+    font-size: .30rem;
+  }
+}

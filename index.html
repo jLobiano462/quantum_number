@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content = 'IE=edge'>
+    <meta name ='description' content = 'A web application that automatically creates Quantum numbers for users'>
+    <meta name='viewport' content = 'width=device-width,initial-scale = 1.0'>
+    <link rel = 'stylesheet' href ='style.css' type = 'text/css'>
+    <title>Quantum Flux</title>
+  </head>
+
+
+  <body>
+    <nav>
+    <h1>Quantum Flux</h1>
+    </nav>
+    <main>
+      <div class = 'Config-to-qn'>
+        <h2>Configuration to Quantum Numbers</h2>
+
+        <div class ='input-contents'>
+          <div>
+          <h3>Orbital</h3>
+          <label for='orbital'>Enter here:</label>
+          <input type="number" name ='orbital' id='input-orbital'>
+        </div>
+        <div>
+          <h3>Subshell</h3>
+          <label for="subshell">s:</label>
+          <input type ='radio' name='subshell' value='s'>
+          <label for="subshell">p:</label>
+          <input type ='radio' name='subshell' value ='p'>
+          <label for="subshell">d:</label>
+          <input type ='radio' name='subshell' value ='d'>
+          <label for="subshell">f:</label>
+          <input type ='radio' name='subshell' value ='f'>
+
+        </div>
+
+        <div>
+          <h3>Electron number</h3>
+          <label for='electron'>Enter here:</label>
+          <input type="number" name ='electron' id='electron-number'>
+        </div>
+
+        <div class='result-div'>
+          <h3>Result</h3>
+          <div>
+          <p id ='n'>n = </p>
+          <p id ='l'>l = </p>
+        </div>
+          <div>
+          <p id ='ml'>m<sub>l</sub> = </p>
+          <p id ='ms'>m<sub>s</sub> = </p>
+        </div>
+
+        </div>
+        <div class ='button' id = 'button'>
+          <button id ='switch' class= 'switch'>
+            Switch
+            <span class='icon'>
+              <ion-icon name="swap-horizontal-outline"></ion-icon>
+            </span>
+          </button>
+          <p class = 'error-handler-2' id ='error-handler'>
+          </p>
+
+          <button id ='calculate' class= 'calculate'>
+            Calculate
+            <span class='icon'>
+            </span>
+          </button>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+      </div>
+
+
+      <div class ='Qn-to-config'>
+        <h2>Quantum numbers to configuration</h2>
+
+        <div class ='input-contents'>
+          <div>
+          <h3>Quantum number "n"</h3>
+          <label for='orbital'>Enter here:</label>
+          <input type="number" name ='orbital' id='input-N'>
+        </div>
+        <div>
+          <h3>Quantum number "l"</h3>
+          <label for="l-value">0:</label>
+          <input type ='radio' name='l-value' value='0'>
+          <label for="l-value">1:</label>
+          <input type ='radio' name='l-value' value ='1'>
+          <label for="l-value">2:</label>
+          <input type ='radio' name='l-value' value ='2'>
+          <label for="l-value">3:</label>
+          <input type ='radio' name='l-value' value ='3'>
+
+        </div>
+
+        <div>
+          <h3>Quantum Number "m<sub>l</sub>"</h3>
+          <label for='electron'>Enter here:</label>
+          <input type="number" name ='electron' id='input-location'>
+
+        </div>
+
+        <div>
+          <h3>Quantum Number "m<sub>s</sub>"</h3>
+          <label for='spin'>+ 1/2:</label>
+          <input type="radio" name ='spin' value='positive'>
+          <label for='spin'>- 1/2:</label>
+          <input type="radio" name ='spin' value='negative'>
+
+        </div>
+
+        <div id ='result'>
+          <h3>Result</h3>
+          <p id ='configuration'></p>
+
+        </div>
+
+        <div class ='button-2' id = 'button-2'>
+          <button id ='switch' class= 'switch'>
+            Switch
+            <span class='icon'>
+              <ion-icon name="swap-horizontal-outline"></ion-icon>
+            </span>
+          </button>
+          <p class = 'error-handler' id ='error-handler'>
+          </p>
+
+          <button id ='calculate-2' class= 'calculate'>
+            Calculate
+            <span class='icon'>
+            </span>
+          </button>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src='script.js'></script>
+  </body>
+
+
+
+
+</html>
