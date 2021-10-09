@@ -102,6 +102,7 @@ const getQuant = (orb, el,ss)=>{
   if (el > subShellObject[ss]){
     errorHandle2.textContent =`the ${ss} subshell is incapabel of storing ${el} electrons`
   }else{
+    errorHandle2.textContent = ''
     nP.textContent += orb
     lP.textContent += l_indentifier[ss]
     getElPosition(el,ss)
