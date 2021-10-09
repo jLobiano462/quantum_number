@@ -84,7 +84,7 @@ calculateButton.addEventListener('click',()=>{
     }
   }
   if (electron <= 0 || electron === '' || orbital <= 0 || orbital === '' || sub === ''){
-    errorHandle2.textContent = 'Please input all fields before clicking...'
+    errorHandle2.textContent = 'Please input all fields appropriately before clicking...'
   }else{
 
     errorHandle2.textContent = ''
@@ -184,7 +184,7 @@ calculateButton2.addEventListener('click',()=>{
   }
 
   if (n === '' || n === '0' || electron_location === '' || spin === '' || l === ''){
-    errorHandle.textContent = 'Check if all input fields are entered with appropriate data'
+    errorHandle.textContent = 'Please input all fields appropriately before clicking'
   }else{
     getConfig(n,electron_location,spin,l)
   }
